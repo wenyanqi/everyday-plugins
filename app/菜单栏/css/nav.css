@@ -1,0 +1,62 @@
+ul{
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	color:white;
+	font-weight: bold;
+
+}
+.nav>li{
+	margin-left: 10px;
+}
+ul>li{
+	float: left;
+	
+	width: 100px;
+	height:40px;
+	background-color: black;
+	line-height: 40px;
+}
+ul li:hover{
+	background-color: pink;
+	color: black;
+}
+ul>li:hover .subnav{
+	display: block;
+}
+.subnav{
+	height: 200px;
+	width: 100px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	
+}
+
+
+/*针对webkit内核浏览器的滚动条的设置*/
+::-webkit-scrollbar {
+	width: 2px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: gray;
+}
+::-webkit-scrollbar-button{
+
+}
+
+/* 滚动条的滑轨背景颜色 */
+/*::-webkit-scrollbar-track {
+	background-color: #b46868;
+} */
+/* 滑块颜色 */
+/*::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2); 
+} */
+
+::-webkit-scrollbar-button {
+	background-color: #7c2929;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-webkit-scrollbar-corner {
+	background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
